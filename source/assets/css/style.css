@@ -73,6 +73,7 @@ span {
 .header {
     position: fixed;
     left: 0;right: 0;
+    z-index: 1000;
 
     background: #fff;
 }
@@ -280,4 +281,246 @@ span {
 .soup__info_price {
     font-size: 60px;
     margin: 30px 0 0;
+}
+
+
+
+
+
+
+
+
+
+/* =====MENU BLOCK===== */
+.menu__items {
+    display: flex;
+}
+
+.menu__block {
+    padding: 70px 0;
+}
+
+.menu__block_title {
+    margin-bottom: 30px;
+}
+
+.menu__block_title h1 {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.menu__block_title p {
+    font-size: 20px;
+}
+
+.block__content {
+    margin: 0 60px 20px 0;
+
+    flex: 1 1 15%;
+}
+
+.block__item {
+    display: none;
+}
+
+.block__item._active {
+    display: flex;
+    justify-content: space-between;
+}
+
+.block__title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.block__price {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.block__product {
+    font-size: 14px;
+}
+
+.click {
+    font-size: 24px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 30px 0 15px;
+
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+}
+
+.click img {
+    margin-right: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* =====STEAK BLOCK===== */
+.block__steak {
+    background: url(../../img/steak__block/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    padding: 200px 0;
+
+    color: #fff;
+}
+
+.steak__title {
+    text-align: start;
+    font-size: 25px;
+    line-height: 60px;
+    font-weight: bold;
+
+    margin: 0;
+
+    text-transform: uppercase;
+
+    padding: 0 50px 0 35px;
+}
+
+.steak__body {
+    
+}
+
+.steak__content {
+    margin: 0 35px;
+}
+
+.steak__content {
+    font-size: 20px;
+
+    min-width: 400px;
+}
+
+.fieldset {
+    border: 6px solid #fff;
+
+    max-width: 700px;
+}
+
+.steak__text {
+    margin-bottom: 30px;
+}
+
+.steak__text p{
+    margin: 15px 0 0;
+}
+
+.steak__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.steak__info_price {
+    font-size: 60px;
+    margin: 30px 0 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* =====GALERY===== */
+.galery__body {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.disable {
+    opacity: .3;
+}
+
+.disable._active {
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+/* =====MAP===== */
+.map {
+    background: url(../../img/Block__pin/Layer\ 43.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    padding: 100px 0;
+
+    color: #fff;
+}
+
+.map__body {
+    position: relative;
+}
+
+.map__body img {
+    position: absolute;
+    left: 800px;top: 200px;
+}
+
+.map__body h1 {
+    margin-bottom: 350px;
+
+    font-size: 60px;
+}
+
+.adress {
+    display: flex;
+    justify-content: space-between;
+}
+
+.adress__item {
+    padding: 40px 70px;
+}
+
+.adress__item._active {
+    border: 2px solid red;
+}
+
+.adress__item h3 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.adress__item p {
+    font-size: 14px;
+}
+
+.adress__item_text {
+    font-size: 12px;
+}
+
+.adress__item_time {
+    display: flex;
+    justify-content: space-between;
+}
+
+.adress__item_time p {
+    margin: 5px;
 }
