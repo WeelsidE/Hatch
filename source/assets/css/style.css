@@ -1,0 +1,31 @@
+@font-face {
+    font-family: PTS;
+    src: url(../../font/PTSans-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background: #ccc;
+
+    padding: 0;
+    margin: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+ul,
+li,
+ol {
+    text-decoration: none;
+}
+
+.page {}
+
+._container {
+    
+}
