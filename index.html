@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="source/assets/css/style.css">
+    <link rel="stylesheet" href="source/assets/css/slick.css">
+
 
     <script src="https://kit.fontawesome.com/bc11df43a9.js" crossorigin="anonymous"></script>
     <title>Hatch</title>
@@ -24,10 +26,10 @@
                     </div>
 
                     <ul class="menu__body">
-                        <li><a class="menu__link" href="">Ресторан</a></li>
-                        <li><a class="menu__link" href="">Меню</a></li>
-                        <li><a class="menu__link" href="">Адреса</a></li>
-                        <li><a class="menu__link" href="">Новости</a></li>
+                        <li><a class="menu__link" data-goto=".section_1" href="#">Ресторан</a></li>
+                        <li><a class="menu__link" data-goto=".section_2" href="#">Меню</a></li>
+                        <li><a class="menu__link" data-goto=".section_3" href="#">Адреса</a></li>
+                        <li><a class="menu__link" data-goto=".section_4" href="#">Новости</a></li>
                     </ul>
                 </nav>
             </div>
@@ -36,7 +38,7 @@
         <div class="intro">
             <div class="intro__content _container">
                 <div class="intro__logo">
-                    <img src="source/img/intro/Logo.png" alt="Logo">
+                    <img class="img" src="source/img/intro/Logo.png" alt="Logo">
                 </div>
 
                 <div class="intro__name">
@@ -82,235 +84,363 @@
 
                 <p>От нас невозможно уйти голодным. К вашим услугам лучший шеф-повар Москвы</p>
             </div>
-            <div class="menu__line">
-                <h3><a class="click" href="#hot"><img src="source/img/menu__block/hot.png" alt="hot">Горячие закуски</a></h3>
-                <div class="menu__items">
-                    <div class="block__item" id="hot">
-                        <div class="block__content">
-                            <img src="source/img/menu__block/bl1.png" alt="">
-                            <div class="block__title">
-                                <h5>Тарелка свежих овощей с чесночно-творожным соусом</h5>
+            <div class="menu__line one section_2">
+                <div class="menu__section">
+                    <div class="menu__section_header">
+                        <h3><img src="source/img/menu__block/hot.png" alt=""> Горячие закуски</h3>
+                    </div>
+                    <div class="menu__section_body">
+                            <div class="slider__tt">
+                                <div class="block__content">
+                                    <img src="source/img/menu__block/bl1.png" alt="">
+                                    <div class="block__title">
+                                        <h5>Тарелка свежих овощей с чесночно-творожным соусом</h5>
+                                    </div>
+                    
+                                    <div class="block__product">
+                                        <p>Сладкий перец,томаты, огурцы, зеленые перья лука, зелень, стебли сельдерея</p>
+                    
+                                        <p>220 г / 150 ккал.</p>
+                                    </div>
+                    
+                                    <div class="block__price">
+                                        <h3>210, — ₽</h3>
+                                    </div>
+                                </div>
+                    
+                                <div class="block__content">
+                                    <img src="source/img/menu__block/bl2.png" alt="">
+                                    <div class="block__title">
+                                        <h5>Тарелка свежих овощей с чесночно-творожным соусом</h5>
+                                    </div>
+                    
+                                    <div class="block__product">
+                                        <p>Сладкий перец,томаты, огурцы, зеленые перья лука, зелень, стебли сельдерея</p>
+                    
+                                        <p>220 г / 150 ккал.</p>
+                                    </div>
+                    
+                                    <div class="block__price">
+                                        <h3>210, — ₽</h3>
+                                    </div>
+                                </div>
+                    
+                                <div class="block__content">
+                                    <img src="source/img/menu__block/bl3.png" alt="">
+                                    <div class="block__title">
+                                        <h5>Тарелка свежих овощей с чесночно-творожным соусом</h5>
+                                    </div>
+                    
+                                    <div class="block__product">
+                                        <p>Сладкий перец,томаты, огурцы, зеленые перья лука, зелень, стебли сельдерея</p>
+                    
+                                        <p>220 г / 150 ккал.</p>
+                                    </div>
+                    
+                                    <div class="block__price">
+                                        <h3>210, — ₽</h3>
+                                    </div>
+                                </div>
+                    
+                                <div class="block__content">
+                                    <img src="source/img/menu__block/bl3.png" alt="">
+                                    <div class="block__title">
+                                        <h5>Тарелка свежих овощей с чесночно-творожным соусом</h5>
+                                    </div>
+                    
+                                    <div class="block__product">
+                                        <p>Сладкий перец,томаты, огурцы, зеленые перья лука, зелень, стебли сельдерея</p>
+                    
+                                        <p>220 г / 150 ккал.</p>
+                                    </div>
+                    
+                                    <div class="block__price">
+                                        <h3>210, — ₽</h3>
+                                    </div>
+                                </div>
+                    
+                                <div class="block__content">
+                                    <img src="source/img/menu__block/bl4.png" alt="">
+                                    <div class="block__title">
+                                        <h5>Тарелка свежих овощей с чесночно-творожным соусом</h5>
+                                    </div>
+                    
+                                    <div class="block__product">
+                                        <p>Сладкий перец,томаты, огурцы, зеленые перья лука, зелень, стебли сельдерея</p>
+                    
+                                        <p>220 г / 150 ккал.</p>
+                                    </div>
+                    
+                                    <div class="block__price">
+                                        <h3>210, — ₽</h3>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+
+                <div class="menu__section">
+                    <div class="menu__section_header">
+                        <h3><img src="source/img/menu__block/beer.png" alt="">Пивные закуски</h3>
+                    </div>
+                    <div class="menu__section_body">
+                        <div class="flex">
+                            <div class="block__content">
+                                <img src="source/img/menu__block/bl1.png" alt="">
+                                <div class="block__title">
+                                    <h5>Тарелка свежих овощей с чесночно-творожным соусом</h5>
+                                </div>
+
+                                <div class="block__product">
+                                    <p>Сладкий перец,томаты, огурцы, зеленые перья лука, зелень, стебли сельдерея</p>
+
+                                    <p>220 г / 150 ккал.</p>
+                                </div>
+
+                                <div class="block__price">
+                                    <h3>210, — ₽</h3>
+                                </div>
                             </div>
 
-                            <div class="block__product">
-                                <p>Сладкий перец,томаты, огурцы, зеленые перья лука, зелень, стебли сельдерея</p>
+                            <div class="block__content">
+                                <img src="source/img/menu__block/bl2.png" alt="">
+                                <div class="block__title">
+                                    <h5>Сырные пятачки из собственной сыровани</h5>
+                                </div>
 
-                                <p>220 г / 150 ккал.</p>
+                                <div class="block__product">
+                                    <p>В пряном масле с вялеными томатами и травами</p>
+
+                                    <p>220 г / 150 ккал.</p>
+                                </div>
+
+                                <div class="block__price">
+                                    <h3>350, — ₽</h3>
+                                </div>
                             </div>
 
-                            <div class="block__price">
-                                <h3>210, — ₽</h3>
+                            <div class="block__content">
+                                <img src="source/img/menu__block/bl3.png" alt="">
+                                <div class="block__title">
+                                    <h5>Сыр из собственной сыроварни</h5>
+                                </div>
+
+                                <div class="block__product">
+                                    <p>Приготовленный по старинному кавказскому рецепту, подается на пергаменте со сладкой горчицей</p>
+
+                                    <p>50 г	/ 90 ккал.</p>
+                                </div>
+
+                                <div class="block__price">
+                                    <h3>150, — ₽</h3>
+                                </div>
+                            </div>
+
+                            <div class="block__content">
+                                <img src="source/img/menu__block/bl4.png" alt="">
+                                <div class="block__title">
+                                    <h5>Сало трёх видов с хреном и горчицей</h5>
+                                </div>
+
+                                <div class="block__product">
+                                    <p>Сало в острой перечной обсыпке, с чесноком и сало собственного копчения.</p>
+
+                                    <p>220 г / 150 ккал.</p>
+                                </div>
+
+                                <div class="block__price">
+                                    <h3>270, — ₽</h3>
+                                </div>
                             </div>
                         </div>
-
-                        <div class="block__content">
-                            <img src="source/img/menu__block/bl2.png" alt="">
-                            <div class="block__title">
-                                <h5>Сырные пятачки из собственной сыровани</h5>
-                            </div>
-
-                            <div class="block__product">
-                                <p>В пряном масле с вялеными томатами и травами</p>
-
-                                <p>220 г / 150 ккал.</p>
-                            </div>
-
-                            <div class="block__price">
-                                <h3>350, — ₽</h3>
-                            </div>
                         </div>
+                </div>
 
-                        <div class="block__content">
-                            <img src="source/img/menu__block/bl3.png" alt="">
-                            <div class="block__title">
-                                <h5>Сыр из собственной сыроварни</h5>
+
+                <div class="menu__section">
+                    <div class="menu__section_header">
+                        <h3><img src="source/img/menu__block/soup.png" alt="">Супы</h3>
+                    </div>
+                    <div class="menu__section_body">
+                        <div class="flex">
+                            <div class="block__content">
+                                <img src="source/img/menu__block/bl1.png" alt="">
+                                <div class="block__title">
+                                    <h5>Тарелка свежих овощей с чесночно-творожным соусом</h5>
+                                </div>
+
+                                <div class="block__product">
+                                    <p>Сладкий перец,томаты, огурцы, зеленые перья лука, зелень, стебли сельдерея</p>
+
+                                    <p>220 г / 150 ккал.</p>
+                                </div>
+
+                                <div class="block__price">
+                                    <h3>210, — ₽</h3>
+                                </div>
                             </div>
 
-                            <div class="block__product">
-                                <p>Приготовленный по старинному кавказскому рецепту, подается на пергаменте со сладкой горчицей</p>
+                            <div class="block__content">
+                                <img src="source/img/menu__block/bl2.png" alt="">
+                                <div class="block__title">
+                                    <h5>Сырные пятачки из собственной сыровани</h5>
+                                </div>
 
-                                <p>50 г	/ 90 ккал.</p>
+                                <div class="block__product">
+                                    <p>В пряном масле с вялеными томатами и травами</p>
+
+                                    <p>220 г / 150 ккал.</p>
+                                </div>
+
+                                <div class="block__price">
+                                    <h3>350, — ₽</h3>
+                                </div>
                             </div>
 
-                            <div class="block__price">
-                                <h3>150, — ₽</h3>
+                            <div class="block__content">
+                                <img src="source/img/menu__block/bl3.png" alt="">
+                                <div class="block__title">
+                                    <h5>Сыр из собственной сыроварни</h5>
+                                </div>
+
+                                <div class="block__product">
+                                    <p>Приготовленный по старинному кавказскому рецепту, подается на пергаменте со сладкой горчицей</p>
+
+                                    <p>50 г	/ 90 ккал.</p>
+                                </div>
+
+                                <div class="block__price">
+                                    <h3>150, — ₽</h3>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="block__content">
-                            <img src="source/img/menu__block/bl4.png" alt="">
-                            <div class="block__title">
-                                <h5>Сало трёх видов с хреном и горчицей</h5>
-                            </div>
+                            <div class="block__content">
+                                <img src="source/img/menu__block/bl4.png" alt="">
+                                <div class="block__title">
+                                    <h5>Сало трёх видов с хреном и горчицей</h5>
+                                </div>
 
-                            <div class="block__product">
-                                <p>Сало в острой перечной обсыпке, с чесноком и сало собственного копчения.</p>
+                                <div class="block__product">
+                                    <p>Сало в острой перечной обсыпке, с чесноком и сало собственного копчения.</p>
 
-                                <p>220 г / 150 ккал.</p>
-                            </div>
+                                    <p>220 г / 150 ккал.</p>
+                                </div>
 
-                            <div class="block__price">
-                                <h3>270, — ₽</h3>
+                                <div class="block__price">
+                                    <h3>270, — ₽</h3>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div><!-- /.menu__items -->
+                </div>
 
-                <h3><a class="click" href="#beer"><img src="source/img/menu__block/beer.png" alt="beer">Пивные закуски</a></h3>
-                <div class="menu__items">
-                    <div class="block__item" id="beer">
-                        <div class="block__content">
-                            <img src="source/img/menu__block/bl1.png" alt="">
-                            <div class="block__title">
-                                <h5>Тарелка свежих овощей с чесночно-творожным соусом</h5>
-                            </div>
+                <div class="menu__section">
+                    <div class="menu__section_header">
+                        <h3><img src="source/img/menu__block/meet.png" alt="">Мясо</h3>
+                    </div>
+                    <div class="menu__section_body">
+                        <div class="flex">
+                            <div class="block__content">
+                                <img src="source/img/menu__block/bl1.png" alt="">
+                                <div class="block__title">
+                                    <h5>Тарелка свежих овощей с чесночно-творожным соусом</h5>
+                                </div>
 
-                            <div class="block__product">
-                                <p>Сладкий перец,томаты, огурцы, зеленые перья лука, зелень, стебли сельдерея</p>
+                                <div class="block__product">
+                                    <p>Сладкий перец,томаты, огурцы, зеленые перья лука, зелень, стебли сельдерея</p>
 
-                                <p>220 г / 150 ккал.</p>
-                            </div>
+                                    <p>220 г / 150 ккал.</p>
+                                </div>
 
-                            <div class="block__price">
-                                <h3>210, — ₽</h3>
+                                <div class="block__price">
+                                    <h3>210, — ₽</h3>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div><!-- /.menu__items -->
+                </div>
 
-                <h3><a class="click" href="#salad"><img src="source/img/menu__block/salad.png" alt="beer">Салаты</a></h3>
-                <div class="menu__items">
-                    <div class="block__item" id="salad">
-                        <div class="block__content">
-                            <img src="source/img/menu__block/bl1.png" alt="">
-                            <div class="block__title">
-                                <h5>Тарелка свежих овощей с чесночно-творожным соусом</h5>
-                            </div>
+                <div class="menu__section">
+                    <div class="menu__section_header">
+                        <h3><img src="source/img/menu__block/sideDish.png" alt="">Гарниры</h3>
+                    </div>
+                    <div class="menu__section_body">
+                        <div class="flex">
+                            <div class="block__content">
+                                <img src="source/img/menu__block/bl1.png" alt="">
+                                <div class="block__title">
+                                    <h5>Тарелка свежих овощей с чесночно-творожным соусом</h5>
+                                </div>
 
-                            <div class="block__product">
-                                <p>Сладкий перец,томаты, огурцы, зеленые перья лука, зелень, стебли сельдерея</p>
+                                <div class="block__product">
+                                    <p>Сладкий перец,томаты, огурцы, зеленые перья лука, зелень, стебли сельдерея</p>
 
-                                <p>220 г / 150 ккал.</p>
-                            </div>
+                                    <p>220 г / 150 ккал.</p>
+                                </div>
 
-                            <div class="block__price">
-                                <h3>210, — ₽</h3>
+                                <div class="block__price">
+                                    <h3>210, — ₽</h3>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div><!-- /.menu__items -->
+                </div>
 
-                <h3><a class="click" href="#soup"><img src="source/img/menu__block/soup.png" alt="beer">Супы</a></h3>
-                <div class="menu__items">
-                    <div class="block__item" id="soup">
-                        <div class="block__content">
-                            <img src="source/img/menu__block/bl1.png" alt="">
-                            <div class="block__title">
-                                <h5>Тарелка свежих овощей с чесночно-творожным соусом</h5>
-                            </div>
+                <div class="menu__section">
+                    <div class="menu__section_header">
+                        <h3><img src="source/img/menu__block/desserts.png" alt="">Дисерты</h3>
+                    </div>
+                    <div class="menu__section_body">
+                        <div class="flex">
+                            <div class="block__content">
+                                <img src="source/img/menu__block/bl1.png" alt="">
+                                <div class="block__title">
+                                    <h5>Тарелка свежих овощей с чесночно-творожным соусом</h5>
+                                </div>
 
-                            <div class="block__product">
-                                <p>Сладкий перец,томаты, огурцы, зеленые перья лука, зелень, стебли сельдерея</p>
+                                <div class="block__product">
+                                    <p>Сладкий перец,томаты, огурцы, зеленые перья лука, зелень, стебли сельдерея</p>
 
-                                <p>220 г / 150 ккал.</p>
-                            </div>
+                                    <p>220 г / 150 ккал.</p>
+                                </div>
 
-                            <div class="block__price">
-                                <h3>210, — ₽</h3>
+                                <div class="block__price">
+                                    <h3>210, — ₽</h3>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div><!-- /.menu__items -->
+                </div>
 
-                <h3><a class="click" href="#meet"><img src="source/img/menu__block/meet.png" alt="beer">Мясо</a></h3>
-                <div class="menu__items">
-                    <div class="block__item" id="meet">
-                        <div class="block__content">
-                            <img src="source/img/menu__block/bl1.png" alt="">
-                            <div class="block__title">
-                                <h5>Тарелка свежих овощей с чесночно-творожным соусом</h5>
-                            </div>
+                <div class="menu__section">
+                    <div class="menu__section_header">
+                        <h3><img src="source/img/menu__block/beverages.png" alt="">Напитки</h3>
+                    </div>
+                    <div class="menu__section_body">
+                        <div class="flex">
+                            <div class="block__content">
+                                <img src="source/img/menu__block/bl1.png" alt="">
+                                <div class="block__title">
+                                    <h5>Тарелка свежих овощей с чесночно-творожным соусом</h5>
+                                </div>
 
-                            <div class="block__product">
-                                <p>Сладкий перец,томаты, огурцы, зеленые перья лука, зелень, стебли сельдерея</p>
+                                <div class="block__product">
+                                    <p>Сладкий перец,томаты, огурцы, зеленые перья лука, зелень, стебли сельдерея</p>
 
-                                <p>220 г / 150 ккал.</p>
-                            </div>
+                                    <p>220 г / 150 ккал.</p>
+                                </div>
 
-                            <div class="block__price">
-                                <h3>210, — ₽</h3>
+                                <div class="block__price">
+                                    <h3>210, — ₽</h3>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div><!-- /.menu__items -->
-
-                <h3><a class="click" href="#sideDish"><img src="source/img/menu__block/sideDish.png" alt="beer">Гарниры</a></h3>
-                <div class="menu__items">
-                    <div class="block__item" id="sideDish">
-                        <div class="block__content">
-                            <img src="source/img/menu__block/bl1.png" alt="">
-                            <div class="block__title">
-                                <h5>Тарелка свежих овощей с чесночно-творожным соусом</h5>
-                            </div>
-
-                            <div class="block__product">
-                                <p>Сладкий перец,томаты, огурцы, зеленые перья лука, зелень, стебли сельдерея</p>
-
-                                <p>220 г / 150 ккал.</p>
-                            </div>
-
-                            <div class="block__price">
-                                <h3>210, — ₽</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div><!-- /.menu__items -->
-
-                <h3><a class="click" href="#desserts"><img src="source/img/menu__block/desserts.png" alt="beer">Дисерты</a></h3>
-                <div class="menu__items">
-                    <div class="block__item" id="desserts">
-                        <div class="block__content">
-                            <img src="source/img/menu__block/bl1.png" alt="">
-                            <div class="block__title">
-                                <h5>Тарелка свежих овощей с чесночно-творожным соусом</h5>
-                            </div>
-
-                            <div class="block__product">
-                                <p>Сладкий перец,томаты, огурцы, зеленые перья лука, зелень, стебли сельдерея</p>
-
-                                <p>220 г / 150 ккал.</p>
-                            </div>
-
-                            <div class="block__price">
-                                <h3>210, — ₽</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div><!-- /.menu__items -->
-
-                <h3><a class="click" href="#beverages"><img src="source/img/menu__block/beverages.png" alt="beer">Напитки</a></h3>
-                <div class="menu__items">
-                    <div class="block__item" id="beverages">
-                        <div class="block__content">
-                            <img src="source/img/menu__block/bl1.png" alt="">
-                            <div class="block__title">
-                                <h5>Тарелка свежих овощей с чесночно-творожным соусом</h5>
-                            </div>
-
-                            <div class="block__product">
-                                <p>Сладкий перец,томаты, огурцы, зеленые перья лука, зелень, стебли сельдерея</p>
-
-                                <p>220 г / 150 ккал.</p>
-                            </div>
-
-                            <div class="block__price">
-                                <h3>210, — ₽</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div><!-- /.menu__items -->
+                </div>
+            
+                </div>
             </div>
-        </div>
+        
 
 
         <div class="block__steak">
@@ -335,27 +465,26 @@
 
 
         <div class="galery">
-            <div class="galery__body">
+            <div class="galery__body slider__galery">
                 <img class="disable" src="source/img/galery/Layer 45 copy 2.png" alt="">
                 <img class="disable" src="source/img/galery/Layer 45 copy 3.png" alt="">
                 <img class="disable" src="source/img/galery/Layer 45 copy 4.png" alt="">
-                <img class="disable _active" src="source/img/galery/Layer 45 copy 5.png" alt="">
+                <img class="disable" src="source/img/galery/Layer 45 copy 5.png" alt="">
                 <img class="disable" src="source/img/galery/Layer 45 copy.png" alt="">
-                <img class="disable" src="source/img/galery/Layer 49 copy.png" alt="">
+                <img class="disable" src="source/img/galery/Layer 49.png" alt="">
                 <img class="disable" src="source/img/galery/Layer 50.png" alt="">
-                <img class="disable" src="source/img/galery/Layer 52.png" alt="">
             </div>
         </div>
 
 
 
-        <div class="map">
+        <div class="map section_1">
             <div class="map__body _container">
                 <h1>Рестораны</h1>
 
                 <img src="source/img/Block__pin/pin.png" alt="">
 
-                <div class="adress">
+                <div class="adress section_3">
                     <div class="adress__item _active">
                         <h3>Честный стейк</h3>
 
@@ -418,11 +547,71 @@
 
 
 
-        <div class="news"></div>
+        <footer class="footer section_4">
+            <div class="footer__body _container">
+                <div class="news">
+                    <h1>прессрум</h1>
+    
+                    <div class="news__blocks">
+                        <div class="news__block">
+                            <div class="news__date">
+                                <p>19 мая,  2015</p>
+                            </div>
+    
+                            <div class="news__text">
+                                <p>Компания Leicht Moscow, ресторанный холдинг Fresco Group и ресторан «Вилла Роза» дали старт новому совместному проекту.</p>
+                            </div>
+                        </div>
+    
+                        <div class="news__block">
+                            <div class="news__date">
+                                <p>3 февраля,  2015</p>
+                            </div>
+    
+                            <div class="news__text">
+                                <p>Летняя веранда ресторана «Вилла Роза» среди лучших предложений Москвы в Resto.ru – поисковой системе для гурманов.</p>
+                            </div>
+                        </div>
+    
+                        <div class="news__block">
+                            <div class="news__date">
+                                <p>7 сентября,  2015</p>
+                            </div>
+    
+                            <div class="news__text">
+                                <p>У нас новая винная карта. Надеемся, что среди многочисленных наименований Вы найдете свое любимое вино.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="mail__form">
+                    <h3>Мы в соцсетях</h3>
+    
+                    <div class="mail__social">
+                        <a href=""><img src="source/img/footer/fb.svg.jpg" alt=""></a>
+                        <a class="image" href=""><img src="source/img/footer/tw.svg.jpg" alt=""></a>
+                        <a class="image" href=""><img src="source/img/footer/g+.svg.jpg" alt=""></a>
+                    </div>
+    
+                    <form action="" method="">
+                        <h4>Рассылка спецпрелложений</h4>
+    
+                        <div class="block__input">
+                            <input type="text" placeholder="Эл. почта"><button type="submit"><img src="source/img/footer/play.svg" alt=""></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </footer>
+
+        
 
 
     </div>
 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="source/assets/js/slick.min.js"></script>
 <script src="source/assets/js/app.js"></script>
 </body>
 </html>
